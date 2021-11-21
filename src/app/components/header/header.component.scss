@@ -1,0 +1,25 @@
+header {
+    background-color: #00a6d8;
+
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+        width: 30%;
+        padding: 10px 0;
+    }
+
+    nav {
+        width: 48%;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-size: 1.3rem;
+        }
+    }
+}
