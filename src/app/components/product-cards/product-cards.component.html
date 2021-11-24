@@ -3,16 +3,16 @@
         <h2 class="product-cards--title">Новинки</h2>
         <div class="cards">
             <div class="flex-row">
-                <div class="card">
-                    <h3 class="card-title">Samsung Galaxy Note 10+</h3>
+                <div class="card" *ngFor="let product of products">
+                    <h3 class="card-title">{{ product.name }}</h3>
                     <div class="card-image">
                         <img src="https://www.notebookcheck-ru.com/uploads/tx_nbc2/4_zu_3_Teaser_Samsung_Galaxy_Note10_Plus_Schwarz.jpg" alt="">
                     </div>
                     <p class="card-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem architecto maiores nemo accusantium recusandae quia!
+                        {{ product.description }}
                     </p>
                     <div class="card-info">
-                        <p class="card-price">29000 грн.</p>
+                        <p class="card-price">{{ product.price }} грн.</p>
                         <a href="#" class="card-link">Перейти</a>
                     </div>
                     
